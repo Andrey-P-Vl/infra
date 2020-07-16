@@ -1,0 +1,10 @@
+{
+     "proj_id": "week-3-281918",
+     "machine_type": "f1-micro",
+     "source_image_family": "ubuntu-1604-lts",
+     "disk_size": "10",
+     "image_description": "Image_Description_Puma",
+     "disk_type": "pd-standard",
+     "network": "default",
+     "tags": "puma-server"
+ }   

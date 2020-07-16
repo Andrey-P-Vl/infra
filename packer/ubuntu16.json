@@ -1,4 +1,32 @@
 {
+<<<<<<< HEAD
+	{
+	"variables": {
+		"proj_id": null,
+		"machine_type": "f1-micro",
+		"source_image_family": null,
+		"disk_size": "10",
+		"image_description": "Image_Description_Puma",
+		"disk_type": "pd-standard",
+		"network": "default",
+		"tags": "puma-server"
+	}	
+	}
+	"builders": [
+		{
+		"type": "googlecompute",
+		"project_id": "{{user `proj_id`}}",
+		"image_name": "reddit-base-{{timestamp}}",
+		"image_description": "{{user `image_description`}}",
+		"zone": "europe-west1-b",
+		"source_image_family": "{{user `source_image_family`}}",
+		"disk_size": "{{user `disk_size`}}",
+		"disk_type": "{{user `disk_type`}}",
+		"network": "{{user `network`}}",
+		"tags": "{{user `tags`}}", 
+		"ssh_username": "appuser",
+		"machine_type": "{{user `machine_type`}}"
+=======
 	"builders": [
 		{
 		"type": "googlecompute",
@@ -8,6 +36,7 @@
 		"zone": "europe-west1-b",
 		"ssh_username": "appuser",
 		"machine_type": "f1-micro"
+>>>>>>> 24df253689d8fe77e73e0db9a55c63b22e007391
 		}
 	],
 	"provisioners": [
