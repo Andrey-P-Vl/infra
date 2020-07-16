@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
 	{
 	"variables": {
 		"proj_id": null,
@@ -25,6 +26,17 @@
 		"tags": "{{user `tags`}}", 
 		"ssh_username": "appuser",
 		"machine_type": "{{user `machine_type`}}"
+=======
+	"builders": [
+		{
+		"type": "googlecompute",
+		"project_id": "week-3-281918",
+		"image_name": "reddit-base-{{timestamp}}",
+		"source_image": "ubuntu-1604-xenial-v20200713a",
+		"zone": "europe-west1-b",
+		"ssh_username": "appuser",
+		"machine_type": "f1-micro"
+>>>>>>> 24df253689d8fe77e73e0db9a55c63b22e007391
 		}
 	],
 	"provisioners": [
